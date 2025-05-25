@@ -111,7 +111,7 @@ export default () => {
                 <button onClick={() => {
                   setLoaded(false);
                   setIsLoading(true);
-                  fetch(`http://localhost:8000/diagram/?topic=${prompt}`)
+                  fetch(`https://diagra-hjwi.onrender.com/diagram/?topic=${prompt}`)
                     .then(res => res.json())
                     .then(res => {
                       setDiagram(res.output);
